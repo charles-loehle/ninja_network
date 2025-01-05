@@ -14,10 +14,10 @@ Route::get('/ninjas', [NinjaController::class, 'index'])->name('ninjas.index');
 Route::get('/ninjas/create', [NinjaController::class, 'create'])->name('ninjas.create');
 
 // SHOW - ONE NINJA
-Route::get('/ninjas/{id}', [NinjaController::class, 'show'])->name('ninjas.show');
+Route::get('/ninjas/{ninja}', [NinjaController::class, 'show'])->name('ninjas.show');
 
 // CREATE
 Route::post('/ninjas', [NinjaController::class, 'store'])->name('ninjas.store');
 
 // DELETE 
-Route::delete('/ninjas/{id}', [NinjaController::class, 'destroy'])->name('ninjas.destroy');
+Route::delete('/ninjas/{ninja}', [NinjaController::class, 'destroy'])->name('ninjas.destroy');
